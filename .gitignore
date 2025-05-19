@@ -10,6 +10,11 @@
 !.yarn/releases
 !.yarn/versions
 
+# shadcn/ui components
+/src/components/ui/
+/src/hooks/
+/src/lib/
+
 # testing
 /coverage
 
