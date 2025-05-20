@@ -1,5 +1,5 @@
 import { AppSidebar } from "@/app/_components/app-sidebar";
-import { SidebarProvider } from "@/components/ui/sidebar";
+import { SidebarProvider } from "@/app/_components/_shadcn/sidebar";
 
 
 export default function Home() {

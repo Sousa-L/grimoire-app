@@ -1,4 +1,4 @@
-import { SidebarHeader, SidebarContent, SidebarGroup, SidebarGroupLabel, SidebarMenu, SidebarMenuItem, SidebarMenuButton, Sidebar } from "@/components/ui/sidebar";
+import { SidebarHeader, SidebarContent, SidebarGroup, SidebarGroupLabel, SidebarMenu, SidebarMenuItem, SidebarMenuButton, Sidebar } from "@/app/_components/_shadcn/sidebar";
 import { Search, Map, User} from "lucide-react";
 import { AppDropdown } from "./app-dropdown";
 
