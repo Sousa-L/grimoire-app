@@ -1,6 +1,7 @@
 import { SidebarHeader, SidebarContent, SidebarGroup, SidebarGroupLabel, SidebarMenu, SidebarMenuItem, SidebarMenuButton, Sidebar } from "@/app/_components/_shadcn/sidebar";
 import { Search, Map, User} from "lucide-react";
 import { AppDropdown } from "./app-dropdown";
+import { HTMLAttributes } from "react";
 
 const items = [
     {
@@ -15,14 +16,14 @@ const items = [
     },
 ]
 
-export function AppSidebar () {
+export function AppSidebar ({ className, ...props }: HTMLAttributes<HTMLDivElement>) {
     return (
-        <Sidebar variant="inset" className="">
-          <SidebarHeader className="m-2 flex flex-row justify-between items-center">
+        <Sidebar variant="inset" className={className} {...props}>
+          <SidebarHeader className="m-2 flex flex-row justify-between items-center max-sm:hidden">
             <AppDropdown/>
             <Search className="size-4" />
           </SidebarHeader>
-          <SidebarContent>
+          <SidebarContent className="max-sm: mt-5">
             <SidebarGroup>
               <SidebarGroupLabel>Mundo</SidebarGroupLabel>
               <SidebarMenu>

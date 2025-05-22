@@ -7,6 +7,9 @@ module.exports = {
       fontFamily: {
         'inter': ['Inter', 'sans-serif'],
       },
+      fontVariant: {
+        smallcaps: 'small-caps',
+      },
     },
   },
   variants: {
